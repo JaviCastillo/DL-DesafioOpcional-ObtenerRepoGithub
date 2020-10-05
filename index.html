@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Desafio 2</title>
+
+    <style>
+        input, button {
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+        }
+        .repo {
+            border: 1px solid #ddd; 
+            cursor: pointer; 
+            display: inline-block;
+            height: 70px; 
+            text-align: left;
+            margin: 10px;
+            padding: 10px;
+            background-color: #94dbff; 
+            border-color: #94dbff;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="from">Página</label>
+    <input type="text" id="from" value="1" />
+    <label for="from">Cantidad (30 max)</label>
+    <input type="text" id="size" value="10" />
+
+    <br />
+    <input type="text" id="user" value="facebook" />
+    <button onclick="showRepositories()">Enviar</button>
+
+    <div class="total"></div>
+
+    <div id="repositories"></div>
+</body>
+
+
+<script src="./desafio2.js"></script>
+</html>
